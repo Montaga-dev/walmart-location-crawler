@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+extend-exclude = [".local"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
