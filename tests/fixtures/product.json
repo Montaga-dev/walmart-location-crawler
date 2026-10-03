@@ -1,0 +1,59 @@
+{
+  "data": {
+    "product": {
+      "usItemId": "765224053",
+      "name": "IronMax 13Amp Corded Scarifier 15\" Electric Lawn Dethatcher w/50L Collection Bag Orange",
+      "canonicalUrl": "/ip/IronMax-13Amp-Corded-Scarifier-15-Electric-Lawn-Dethatcher-w-50L-Collection-Bag-Orange/765224053",
+      "priceInfo": {
+        "currentPrice": {
+          "price": 139.99,
+          "priceString": "$139.99",
+          "variantPriceString": "$139.99",
+          "currencyUnit": "USD",
+          "bestValue": null,
+          "supportText": null,
+          "priceDisplay": "Now $139.99"
+        },
+        "wasPrice": {
+          "price": 229,
+          "priceString": "$229.00",
+          "variantPriceString": null,
+          "currencyUnit": "USD",
+          "bestValue": null,
+          "supportText": null
+        }
+      },
+      "location": {
+        "postalCode": "10001",
+        "stateOrProvinceCode": "NY",
+        "city": "New York",
+        "storeIds": [
+          "3520"
+        ],
+        "addressId": null,
+        "intent": "SHIPPING",
+        "mpPickupLocation": null,
+        "pickupLocation": {
+          "storeId": "3520",
+          "accessPointId": null,
+          "accessType": null
+        }
+      },
+      "fulfillmentOptions": [
+        {
+          "type": "SHIPPING",
+          "availabilityStatus": "IN_STOCK"
+        },
+        {
+          "type": "PICKUP",
+          "availabilityStatus": "NOT_AVAILABLE"
+        },
+        {
+          "type": "DELIVERY",
+          "availabilityStatus": "NOT_AVAILABLE"
+        }
+      ],
+      "sellerName": "Goplus Corp"
+    }
+  }
+}

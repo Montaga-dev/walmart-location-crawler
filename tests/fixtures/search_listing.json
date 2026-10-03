@@ -1,0 +1,298 @@
+{
+  "searchResult": {
+    "errorResponse": {
+      "correlationId": "00-f98153338ac0cc39a85fb1b06c61405c-77b301454246d864-00",
+      "source": "sis",
+      "errorCodes": null,
+      "errors": []
+    },
+    "paginationV2": {
+      "maxPage": 13,
+      "pageProperties": {
+        "page": 1,
+        "query": "nike",
+        "facet": "fulfillment_method:Shipping",
+        "sort": "best_match",
+        "cat_id": "0",
+        "stores": "3081",
+        "primaryStacksToMatch": [
+          {
+            "isPrimaryStack": true,
+            "matchIndex": 0
+          },
+          {
+            "isPrimaryStack": true,
+            "matchIndex": 2
+          }
+        ]
+      }
+    },
+    "itemStacks": [
+      {
+        "meta": {
+          "layoutEnum": "GRID",
+          "subType": "EXACT_MATCH"
+        },
+        "items": [
+          {
+            "__typename": "Product",
+            "usItemId": "19288557285",
+            "name": "Men's Size 13 Nike Dunk Low Sneaker \"Athletic Department Deep Jungle\" (FQ8080-133)",
+            "brand": "Nike",
+            "productBrand": "Nike",
+            "imageInfo": {
+              "id": "F4F11BA3C2474370848ADC1F842E6E10",
+              "name": "Men-s-Size-13-Nike-Dunk-Low-Sneaker-Athletic-Department-Deep-Jungle-FQ8080-133_afabe06a-c4f4-4a7b-aca9-a60eb96670b6.dd24333cf4ff5356c02a8b6244b2e23f.jpeg",
+              "thumbnailUrl": "https://i5.walmartimages.com/seo/Men-s-Size-13-Nike-Dunk-Low-Sneaker-Athletic-Department-Deep-Jungle-FQ8080-133_afabe06a-c4f4-4a7b-aca9-a60eb96670b6.dd24333cf4ff5356c02a8b6244b2e23f.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF",
+              "size": "290-392",
+              "allImages": []
+            },
+            "priceInfo": {
+              "itemPrice": "",
+              "linePrice": "",
+              "linePriceDisplay": "",
+              "savings": "",
+              "savingsAmt": 0,
+              "wasPrice": "",
+              "wasPriceSupportText": "",
+              "unitPrice": "",
+              "shipPrice": "",
+              "minPrice": 0,
+              "minPriceForVariant": "",
+              "priceRangeString": "",
+              "subscriptionPrice": "",
+              "subscriptionString": "",
+              "subscriptionDiscountPrice": "",
+              "priceDisplayCondition": "",
+              "finalCostByWeight": false,
+              "submapType": "",
+              "eaPricingText": "",
+              "eaPricingPreText": "",
+              "memberPriceString": "",
+              "subscriptionDualPrice": null,
+              "subscriptionPercentage": null,
+              "priceDisplayType": null,
+              "priceDetails": {
+                "currency": "USD",
+                "priceLines": [
+                  {
+                    "lineType": "CURRENT_PRICE",
+                    "values": [
+                      {
+                        "key": "PRICE",
+                        "value": "69.99"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "AdPlaceholder"
+          },
+          {
+            "__typename": "Product",
+            "usItemId": "2624964791",
+            "name": "Women's Nike Air Max 270 Light Soft Pink/Black (AH6789 604) - 9.5",
+            "brand": "Nike",
+            "productBrand": "Nike",
+            "imageInfo": {
+              "id": "3C2AEAD91300438A9F880BBDAB26D54C",
+              "name": "Women-s-Nike-Air-Max-270-Light-Soft-Pink-Black-AH6789-604-9-5_3dd24639-4847-4c43-8632-8bdddaa81085.c0b3512cac57b2b4800ba5b092bbfbfb.jpeg",
+              "thumbnailUrl": "https://i5.walmartimages.com/seo/Women-s-Nike-Air-Max-270-Light-Soft-Pink-Black-AH6789-604-9-5_3dd24639-4847-4c43-8632-8bdddaa81085.c0b3512cac57b2b4800ba5b092bbfbfb.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF",
+              "size": "290-392",
+              "allImages": []
+            },
+            "priceInfo": {
+              "itemPrice": "",
+              "linePrice": "",
+              "linePriceDisplay": "",
+              "savings": "",
+              "savingsAmt": 0,
+              "wasPrice": "",
+              "wasPriceSupportText": "",
+              "unitPrice": "",
+              "shipPrice": "",
+              "minPrice": 0,
+              "minPriceForVariant": "",
+              "priceRangeString": "",
+              "subscriptionPrice": "",
+              "subscriptionString": "",
+              "subscriptionDiscountPrice": "",
+              "priceDisplayCondition": "",
+              "finalCostByWeight": false,
+              "submapType": "",
+              "eaPricingText": "",
+              "eaPricingPreText": "",
+              "memberPriceString": "",
+              "subscriptionDualPrice": null,
+              "subscriptionPercentage": null,
+              "priceDisplayType": null,
+              "priceDetails": {
+                "currency": "USD",
+                "priceLines": [
+                  {
+                    "lineType": "CURRENT_PRICE",
+                    "values": [
+                      {
+                        "key": "PRICE",
+                        "value": "137.45"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "__typename": "TileTakeOverProductPlaceholder"
+          }
+        ],
+        "itemsV2": null
+      },
+      {
+        "meta": {
+          "layoutEnum": "CAROUSEL",
+          "subType": "SECONDARY_STACK"
+        },
+        "items": [
+          {
+            "__typename": "Product",
+            "usItemId": "732060516",
+            "name": "Unisex Everyday Cotton Cushioned Crew Training Socks with DRI-FIT Technology (Pack of 6 Pairs), White, X-Large (Men 12-15)",
+            "brand": "Nike",
+            "productBrand": "Nike",
+            "imageInfo": {
+              "id": "D830CFE742304F0BB1EB6285D369CE3A",
+              "name": "Nike-Unisex-Everyday-Cotton-Cushioned-Crew-Training-Socks-with-DRI-FIT-Technology-Pack-of-6-Pairs-White-X-Large-Men-12-15_efa7df00-8095-4e64-b43d-83790bfb913a.567ec4b9908e9825e73a174b5d28c69f.jpeg",
+              "thumbnailUrl": "https://i5.walmartimages.com/seo/Nike-Unisex-Everyday-Cotton-Cushioned-Crew-Training-Socks-with-DRI-FIT-Technology-Pack-of-6-Pairs-White-X-Large-Men-12-15_efa7df00-8095-4e64-b43d-83790bfb913a.567ec4b9908e9825e73a174b5d28c69f.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF",
+              "size": "290-392",
+              "allImages": []
+            },
+            "priceInfo": {
+              "itemPrice": "",
+              "linePrice": "",
+              "linePriceDisplay": "",
+              "savings": "",
+              "savingsAmt": 0,
+              "wasPrice": "",
+              "wasPriceSupportText": "",
+              "unitPrice": "",
+              "shipPrice": "",
+              "minPrice": 0,
+              "minPriceForVariant": "",
+              "priceRangeString": "",
+              "subscriptionPrice": "",
+              "subscriptionString": "",
+              "subscriptionDiscountPrice": "",
+              "priceDisplayCondition": "",
+              "finalCostByWeight": false,
+              "submapType": "",
+              "eaPricingText": "",
+              "eaPricingPreText": "",
+              "memberPriceString": "",
+              "subscriptionDualPrice": null,
+              "subscriptionPercentage": null,
+              "priceDisplayType": null,
+              "priceDetails": {
+                "currency": "USD",
+                "priceLines": [
+                  {
+                    "lineType": "CURRENT_PRICE",
+                    "values": [
+                      {
+                        "key": "PRICE",
+                        "value": "18.90"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "itemsV2": null
+      },
+      {
+        "meta": {
+          "layoutEnum": "GRID",
+          "subType": "EXACT_MATCH"
+        },
+        "items": [
+          {
+            "__typename": "Product",
+            "usItemId": "9861071882",
+            "name": "Men's Nike V2K Run Vintage Green/Vintage Green (HJ4497 300) - 11",
+            "brand": "Nike",
+            "productBrand": "Nike",
+            "imageInfo": {
+              "id": "075A7B4058DF40AD9976E72354EB1468",
+              "name": "Men-s-Nike-V2K-Run-Vintage-Green-Vintage-Green-HJ4497-300-11_7fff07fe-847f-412f-8266-817ebcccad48.b53f6293fa37b47631cbc4ed448af736.jpeg",
+              "thumbnailUrl": "https://i5.walmartimages.com/seo/Men-s-Nike-V2K-Run-Vintage-Green-Vintage-Green-HJ4497-300-11_7fff07fe-847f-412f-8266-817ebcccad48.b53f6293fa37b47631cbc4ed448af736.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFFF",
+              "size": "290-392",
+              "allImages": []
+            },
+            "priceInfo": {
+              "itemPrice": "",
+              "linePrice": "",
+              "linePriceDisplay": "",
+              "savings": "",
+              "savingsAmt": 0,
+              "wasPrice": "",
+              "wasPriceSupportText": "",
+              "unitPrice": "",
+              "shipPrice": "",
+              "minPrice": 0,
+              "minPriceForVariant": "",
+              "priceRangeString": "",
+              "subscriptionPrice": "",
+              "subscriptionString": "",
+              "subscriptionDiscountPrice": "",
+              "priceDisplayCondition": "",
+              "finalCostByWeight": false,
+              "submapType": "",
+              "eaPricingText": "",
+              "eaPricingPreText": "",
+              "memberPriceString": "",
+              "subscriptionDualPrice": null,
+              "subscriptionPercentage": null,
+              "priceDisplayType": null,
+              "priceDetails": {
+                "currency": "USD",
+                "priceLines": [
+                  {
+                    "lineType": "DISCOUNTED_PRICE",
+                    "values": [
+                      {
+                        "key": "PRICE",
+                        "value": "69.87"
+                      }
+                    ]
+                  },
+                  {
+                    "lineType": "COMPARISON",
+                    "values": [
+                      {
+                        "key": "WAS_PRICE",
+                        "value": "122.00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "itemsV2": null
+      }
+    ]
+  },
+  "pageMetadata": {
+    "location": {
+      "postalCode": "95829",
+      "storeId": "3081",
+      "intent": "SHIPPING"
+    }
+  }
+}
