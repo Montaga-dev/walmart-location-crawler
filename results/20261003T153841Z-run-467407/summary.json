@@ -1,0 +1,528 @@
+{
+  "run_id": "20261003T153841Z-run-467407",
+  "command": "run",
+  "status": "complete",
+  "stop_reason": null,
+  "started_at": {
+    "utc": "2026-10-03T15:38:41+00:00",
+    "istanbul": "2026-10-03T18:38:41+03:00"
+  },
+  "finished_at": {
+    "utc": "2026-10-03T19:06:50+00:00",
+    "istanbul": "2026-10-03T22:06:50+03:00"
+  },
+  "duration_seconds": 12489.169,
+  "target_requests": 10000,
+  "attempted_requests": 10000,
+  "successful_requests": 10000,
+  "failed_requests": 0,
+  "cancelled_requests": 0,
+  "unattempted_requests": 0,
+  "success_rate_percent": 100.0,
+  "requests_per_minute": 48.04,
+  "successful_requests_per_minute": 48.04,
+  "by_type": {
+    "product": {
+      "target_requests": 9600,
+      "attempted_requests": 9600,
+      "successful_requests": 9600,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0
+    },
+    "category": {
+      "target_requests": 400,
+      "attempted_requests": 400,
+      "successful_requests": 400,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0
+    }
+  },
+  "category_product_cards": 19254,
+  "http_attempts": 11117,
+  "http_failures": 2,
+  "retries_count": 113,
+  "recoveries_count": 0,
+  "refreshes_count": 2,
+  "blocked_count": 0,
+  "captcha_count": 0,
+  "locations_used": 10,
+  "locations": [
+    {
+      "postal_code": "10001",
+      "location_name": "New York",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 15,
+      "recoveries_count": 0,
+      "refreshes_count": 1,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "90001",
+      "location_name": "Los Angeles",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 14,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "60601",
+      "location_name": "Chicago",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 13,
+      "recoveries_count": 0,
+      "refreshes_count": 1,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "77001",
+      "location_name": "Houston",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 10,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "85001",
+      "location_name": "Phoenix",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 7,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "19103",
+      "location_name": "Philadelphia",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 9,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "78205",
+      "location_name": "San Antonio",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 8,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "92101",
+      "location_name": "San Diego",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 5,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "75201",
+      "location_name": "Dallas",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 17,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    },
+    {
+      "postal_code": "98101",
+      "location_name": "Seattle",
+      "target_requests": 1000,
+      "attempted_requests": 1000,
+      "successful_requests": 1000,
+      "failed_requests": 0,
+      "cancelled_requests": 0,
+      "unattempted_requests": 0,
+      "success_rate_percent": 100.0,
+      "by_type": {
+        "product": {
+          "target_requests": 960,
+          "attempted_requests": 960,
+          "successful_requests": 960,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        },
+        "category": {
+          "target_requests": 40,
+          "attempted_requests": 40,
+          "successful_requests": 40,
+          "failed_requests": 0,
+          "cancelled_requests": 0,
+          "unattempted_requests": 0,
+          "success_rate_percent": 100.0
+        }
+      },
+      "retries_count": 15,
+      "recoveries_count": 0,
+      "refreshes_count": 0,
+      "blocked_count": 0,
+      "captcha_count": 0
+    }
+  ],
+  "errors": [],
+  "config": {
+    "locations": [
+      {
+        "zip": "10001",
+        "name": "New York",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "90001",
+        "name": "Los Angeles",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "60601",
+        "name": "Chicago",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "77001",
+        "name": "Houston",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "85001",
+        "name": "Phoenix",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "19103",
+        "name": "Philadelphia",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "78205",
+        "name": "San Antonio",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "92101",
+        "name": "San Diego",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "75201",
+        "name": "Dallas",
+        "product_requests": 960,
+        "category_requests": 40
+      },
+      {
+        "zip": "98101",
+        "name": "Seattle",
+        "product_requests": 960,
+        "category_requests": 40
+      }
+    ],
+    "categories": [
+      "https://www.walmart.com/browse/clothing/womens-dresses/5438_133162_3074670_538874",
+      "https://www.walmart.com/browse/mens-shirts/mens-t-shirts/5438_133197_6286551_3187021",
+      "https://www.walmart.com/browse/clothing/nike-women-s/best-rated/5438_3317124_7807333_9051496?facet=customer_rating%3A4+-+5+Stars",
+      "https://www.walmart.com/browse/mens-shoes/all-mens-shoes/5438_1045804_1045807_426207",
+      "https://www.walmart.com/browse/laptops/all-laptop-computers/3944_1089430_3951_132960",
+      "https://www.walmart.com/browse/tv-home-theater/all-tvs/3944_1060825_447913",
+      "https://www.walmart.com/browse/audio/headphones/3944_133251_1095191",
+      "https://www.walmart.com/browse/printers-supplies/printers/3944_1089430_37807_163957",
+      "https://www.walmart.com/browse/home/coffee-makers/4044_90548_90546_1115306_5438660",
+      "https://www.walmart.com/browse/fryers/air-fryers/4044_90548_90546_4824_9960466",
+      "https://www.walmart.com/browse/home/vacuum-cleaners/4044_90548_4047_3525958",
+      "https://www.walmart.com/browse/home/refrigerators/4044_90548_9963786",
+      "https://www.walmart.com/browse/pots-pans/cookware-sets/4044_623679_8140341_599265",
+      "https://www.walmart.com/browse/home/bed-sheets-pillowcases/4044_539103_5055527",
+      "https://www.walmart.com/browse/bath/bath-towels/4044_539095_7211899",
+      "https://www.walmart.com/browse/home/storage-bins/4044_90828_1230055_9867281",
+      "https://www.walmart.com/browse/dog-food-and-treats/all-dog-food/5440_202072_6432755_1015000",
+      "https://www.walmart.com/browse/pets/cat-food/5440_202073_1749780",
+      "https://www.walmart.com/browse/baby/diapers/5427_486190_1101406",
+      "https://www.walmart.com/browse/baby/all-baby-strollers/5427_118134_999403",
+      "https://www.walmart.com/browse/games-puzzles/board-games/4171_4191_133123",
+      "https://www.walmart.com/browse/toys/building-sets-blocks/4171_4186",
+      "https://www.walmart.com/browse/toys/all-bicycles/4171_1081404_7499461",
+      "https://www.walmart.com/browse/sports-outdoors/camping-tents/4125_546956_4128_887708_2294923",
+      "https://www.walmart.com/browse/skin-care/moisturizers/1085666_1007039_9837318",
+      "https://www.walmart.com/browse/beauty/shampoos/shampoos/1085666_3147628_5752434",
+      "https://www.walmart.com/browse/toothpaste/all-toothpaste/1005862_1007221_1023020_8164419",
+      "https://www.walmart.com/browse/household-essentials/laundry-detergents/1115193_1071967_1149379",
+      "https://www.walmart.com/browse/clothing/shop-all-backpacks/5438_1045799_4662138_4951948",
+      "https://www.walmart.com/browse/home/luggage-sets/4044_7333633_6723035",
+      "https://www.walmart.com/browse/watches/watches/3891_3906_1012759",
+      "https://www.walmart.com/browse/clothing/sunglasses/5438_1045799_4350993",
+      "https://www.walmart.com/browse/feature/office-chairs/14503_1743450_1072386",
+      "https://www.walmart.com/browse/home/desks/desks/4044_103150_97116_91851",
+      "https://www.walmart.com/browse/power-tools/power-drills/1072864_1031899_1066925_3413875",
+      "https://www.walmart.com/browse/tools/hand-tools/1072864_1031899_1067609",
+      "https://www.walmart.com/browse/oils-and-fluids/motor-oil/91083_1104294_1072084",
+      "https://www.walmart.com/browse/automotive-tires/car-tires/91083_1077064_8752379_4838964_1063465",
+      "https://www.walmart.com/browse/dogs/dog-toys/5440_202072_2243339",
+      "https://www.walmart.com/browse/sports-outdoors/yoga-mats/4125_4134_1078384_1078386"
+    ],
+    "product_file": "product_ids.json",
+    "use_proxy": false,
+    "proxy_count": 0,
+    "sessions_per_ip": 4,
+    "http_per_minute_per_ip": 55,
+    "max_seconds": 18000
+  }
+}
