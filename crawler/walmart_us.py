@@ -378,30 +378,17 @@ class CrawlWalmartUs:
             raise SessionError("Proxy exit IP changed; new session needed")
 
     def _headers(self, operation: str | None) -> dict[str, str | None]:
-        headers = {"accept-language": "en-US,en;q=0.9"}
         if operation is None:
             # curl_cffi adds Chrome's navigation headers to page loads.
-            return headers
+            return {"accept-language": "en-US,en;q=0.9"}
         return {
-            **headers,
-            "accept": "application/json",
+            # These five passed the live header-removal tests on 2026-10-04.
             "content-type": "application/json",
-            "origin": self.BASE_URL,
-            "referer": self.page_url,
-            "sec-fetch-dest": "empty",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-origin",
-            # Remove the navigation defaults from API calls.
-            "sec-fetch-user": None,
-            "upgrade-insecure-requests": None,
-            "tenant-id": "elh9ie",
-            "wm_mp": "true",
-            "x-o-bu": "WALMART-US",
-            "x-o-mart": "B2C",
+            "x-apollo-operation-name": operation,
             "x-o-platform": "rweb",
             "x-o-platform-version": PLATFORM_VERSION,
             "x-o-segment": "oaoh",
-            "x-o-ccm": "server",
-            "x-apollo-operation-name": operation,
-            "x-o-gql-query": f"mutation {operation}",
+            # Keep the existing API exclusions; other Chrome defaults remain.
+            "sec-fetch-user": None,
+            "upgrade-insecure-requests": None,
         }

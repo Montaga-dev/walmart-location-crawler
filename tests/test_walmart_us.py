@@ -61,7 +61,7 @@ def test_set_location_uses_short_url_cookies_then_verifies(product_page):
     ]
     mutation = session.sent[2].headers
     assert mutation["x-apollo-operation-name"] == "UpdatePostalCode"
-    assert mutation["referer"] == "https://www.walmart.com" + CANONICAL
+    assert "referer" not in mutation
 
 
 def test_location_must_be_confirmed_on_the_page(product_page):
