@@ -1,36 +1,36 @@
-# Deney Notları
+# Experiment Notes
 
-1–4 Ekim 2026 testlerinden mevcut çözümü belirleyen bulgular.
-Kurulum ve çalıştırma için [README](../README.md).
+Findings from the 1–4 October 2026 tests that shaped the current solution.
+For setup and running, see the [README](../README.md).
 
-## Neden bu akış seçildi?
+## Why this flow?
 
-- **Ürün ve kategori verisi HTML'den okunuyor.** Sayfadaki `__NEXT_DATA__`
-  JSON'u kullanılıyor. Ürün GraphQL'i kısa denemelerde çalışsa da uzun
-  rotasyon testinde 1.290 HTTP denemesinden yalnızca 33'ü doğrulanmış ürün
-  verdi; 1.247 CAPTCHA yanıtı alındı. HTML akışı 10k çekimini tamamladı.
-- **Konum için GraphQL kullanılıyor.** Yeni misafir oturumu önce bir ürün
-  sayfasını açıyor, ardından `UpdatePostalCode` ile ZIP'i ayarlıyor.
-  Sonrasında ürün HTML'inden ZIP, mağaza ve `SHIPPING` doğrulanıyor.
-- **İstemci `curl_cffi`.** Varsayılan `httpx` engellendi; Chrome/Firefox
-  User-Agent ile kısa testlerde çalıştı. Uzun süreli doğrulama `curl_cffi`
-  ile yapıldığı için bu istemci korundu. TLS parmak izinin tek başına
-  belirleyici olduğu gösterilmedi.
-- **Her yanıtın konumu kontrol ediliyor.** Bazı HTTP 200 yanıtları istenen
-  ZIP yerine varsayılan konumu taşıdı. Aynı oturumda tekrar okumak bu
-  hataları düzeltebildi. Yanlış konum başarı sayılmıyor; sınırlı tekrar,
-  ZIP yenileme ve gerektiğinde yeni oturum açma uygulanıyor.
-- **Hız sınırı 55 HTTP/dk.** Kurulum, yönlendirmeler ve tekrarlar bu sınıra
-  dahil. Yerel modda dört worker aynı sınırı paylaşıyor. Ürünlerin tam
-  adresleri ortak saklanarak tekrarlanan yönlendirmeler azaltılıyor;
-  ürün yanıtları ve oturum çerezleri paylaşılmıyor.
+- **Product and category data comes from HTML.** The page's `__NEXT_DATA__`
+  JSON is used. The product GraphQL endpoint worked in short tests, but in a
+  longer rotation test only 33 of 1,290 HTTP attempts returned a verified
+  product; 1,247 were CAPTCHA responses. The HTML flow completed the 10k run.
+- **GraphQL is used for location.** A new guest session first opens a product
+  page, then sets the ZIP with `UpdatePostalCode`. ZIP, store and `SHIPPING`
+  intent are then verified in the product HTML.
+- **The client is `curl_cffi`.** Default `httpx` was blocked; with a Chrome or
+  Firefox User-Agent it worked in short tests. Long runs were validated with
+  `curl_cffi`, so that client was kept. TLS fingerprinting alone was not shown
+  to be decisive.
+- **Every response's location is checked.** Some HTTP 200 responses carried
+  a default location instead of the requested ZIP. Reading again in the same
+  session usually fixed this. A wrong location never counts as success; the
+  crawler uses bounded retries, a ZIP refresh and, if needed, a new session.
+- **The rate limit is 55 HTTP requests/minute.** Setup, redirects and retries
+  count toward it. In local mode four workers share the limit. Canonical
+  product URLs are shared to avoid repeated redirects; product responses and
+  session cookies are not shared.
 
-## UpdatePostalCode başlık testi — 4 Ekim 2026
+## UpdatePostalCode header test — 4 October 2026
 
-Elle eklenen 18 başlık, ikişer kez tek tek çıkarılarak denendi.
-Aşağıdaki beş başlık çıkarıldığında çağrı başarısız oldu ve kodda tutuldu:
+Each of the 18 manually added headers was removed one at a time, twice.
+Removing any of these five made the call fail, so they are kept in the code:
 
-| Başlık | Çıkarıldığında alınan HTTP durumu |
+| Header | HTTP status when removed |
 | --- | --- |
 | `content-type` | 415 |
 | `x-apollo-operation-name` | 418 |
@@ -38,31 +38,31 @@ Aşağıdaki beş başlık çıkarıldığında çağrı başarısız oldu ve ko
 | `x-o-platform-version` | 429 |
 | `x-o-segment` | 429 |
 
-Diğer 13 başlık birlikte çıkarıldığında, iki yeni misafir oturumu dahil
-konum doğrulaması başarılıydı. Çerezler ve `curl_cffi` tarafından eklenen
-Chrome başlıkları korundu; sonuç bu endpoint ve test edilen yapılandırma
-için geçerlidir.
+With the other 13 headers removed together, location verification still
+succeeded, including with two new guest sessions. Cookies and the Chrome
+headers added by `curl_cffi` were kept; the result applies to this endpoint
+and the tested setup.
 
-## Tamamlanan 10k çekimi — 3 Ekim 2026
+## Completed 10k run — 3 October 2026
 
-Yerel bağlantı, dört worker ve ortak 55 HTTP/dk sınırı kullanıldı.
-On ZIP'in her birinde aynı 960 ürün ve 40 kategori sayfası okundu.
+Local connection, four workers and a shared 55 HTTP/minute limit. Each of the
+10 ZIPs read the same 960 products and 40 category pages.
 
-| Ölçüm | Sonuç |
+| Measure | Result |
 | --- | ---: |
-| Hedef / başarılı okuma | 10.000 / 10.000 |
-| Ürün / kategori sayfası okuması | 9.600 / 400 |
-| Benzersiz ürün / kategori URL'si | 960 / 40 |
-| Süre | 3 saat 28 dakika 9 saniye |
-| Başarılı okuma / dakika | 48,04 |
-| Toplam HTTP denemesi | 11.117 |
-| Tekrar / ZIP yenileme / oturum yenileme | 113 / 2 / 0 |
-| HTTP hatası / son durumda başarısız okuma | 2 / 0 |
-| CAPTCHA / block yanıtı | 0 / 0 |
+| Target / successful reads | 10,000 / 10,000 |
+| Product / category page reads | 9,600 / 400 |
+| Unique products / category URLs | 960 / 40 |
+| Duration | 3 h 28 min 9 s |
+| Successful reads per minute | 48.04 |
+| Total HTTP attempts | 11,117 |
+| Retries / ZIP refreshes / session rebuilds | 113 / 2 / 0 |
+| HTTP errors / reads failed at the end | 2 / 0 |
+| CAPTCHA / blocked responses | 0 / 0 |
 
-10.000 sayısı benzersiz ürün sayısı değil, konumlar boyunca tamamlanan
-ürün ve kategori okumalarının toplamıdır. HTTP sayısı kurulum,
-yönlendirme ve tekrarları da içerir.
+10,000 is the number of product and category reads across all locations,
+not the number of unique products. The HTTP count also includes setup,
+redirects and retries.
 
-Kaynak: [çekim raporu](../results/20261003T153841Z-run-467407/report.md)
-ve [özet](../results/20261003T153841Z-run-467407/summary.json).
+Source: [run report](../results/20261003T153841Z-run-467407/report.md)
+and [summary](../results/20261003T153841Z-run-467407/summary.json).
